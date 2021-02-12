@@ -2,8 +2,8 @@
 #include <Windows.h>
 
 using namespace std;
-const int genislik=80;
-const int yukseklik=20;
+const int width=80;
+const int height=20;
 void coordxy(int x,int y){
 	COORD coord;
 	coord.X=x;
@@ -15,22 +15,22 @@ void coordxy(int x,int y){
 }
 
 int main(){
-	for(int i=0;i<genislik;i++){
+	for(int i=0;i<width;i++){
 		cout<<"a";
 		Sleep(100);
 	}
-	for(int i=0;i<yukseklik;i++){
-		coordxy(genislik-1,i);
+	for(int i=0;i<height;i++){
+		coordxy(width-1,i);
 		cout<<"a";
 		Sleep(100);
 	}
-	for(int i=0;i<genislik;i++){
-		coordxy(genislik-1-i,yukseklik-1);
+	for(int i=0;i<width;i++){
+		coordxy(width-1-i,height-1);
 		cout<<"a";
 		Sleep(100);
 	}
-	for(int i=0;i<yukseklik;i++){
-		coordxy(0,yukseklik-1-i);
+	for(int i=0;i<height;i++){
+		coordxy(0,height-1-i);
 		cout<<"a";
 		Sleep(100);
 	}
